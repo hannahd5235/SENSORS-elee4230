@@ -11,8 +11,8 @@ void setup()
 void loop() {
   val = analogRead(potPin);            // read the value of the potentiometer (value between 0 and 1023)
 
-  // Scale val (0–2905) to (0–4095)
-  long scaledVal = map(val, 0, 2900, 0, 4095);
+  // Scale val (0–2495) to (0–4095)
+  long scaledVal = map(val, 0, 2495, 0, 4095);
 
   // Enforce hard max of 4095
   if (scaledVal > 4095) {
